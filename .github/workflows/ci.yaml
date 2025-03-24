@@ -1,6 +1,9 @@
 name: Test
 run-name: job started by ${{github.actor}}
 on: [ push ]
+permissions:
+  checks: write
+  pull-requests: write
 jobs:
   Maven-Test:
     runs-on: ubuntu-latest
